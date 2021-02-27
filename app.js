@@ -7,7 +7,7 @@ client.on('ready', () => {
     console.log('Bot is ready');
 });
 
-client.on('message', () => {
+client.on('message', (msg) => {
     if (msg.content === 'Hello') msg.reply('Hi');
 });
 
